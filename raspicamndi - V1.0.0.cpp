@@ -329,7 +329,7 @@ void setCameraDefault (struct setting *setting_camera){		//set up default parame
 	
 }
 
-void processCamera (raspicam::RaspiCam &Camera, int x_resolution, int y_resolution, int frame_rate, struct setting setting_camera) {		//processing the set up parametres in a camera istance
+void processCamera (raspicam::RaspiCam &Camera, int x_resolution, int y_resolution, int frame_rate, struct setting setting_camera) {	//processing the set up parametres in a camera istance
 	
     Camera.setWidth ( x_resolution );
     Camera.setHeight ( y_resolution );
@@ -375,7 +375,7 @@ void processCamera (raspicam::RaspiCam &Camera, int x_resolution, int y_resoluti
 
 }
 
-void processNDI (NDIlib_video_frame_v2_t *video_frame, int x_resolution, int y_resolution, int frame_rate, short int format_type){		//processing the set up parametres in a NDI istance
+void processNDI (NDIlib_video_frame_v2_t *video_frame, int x_resolution, int y_resolution, int frame_rate, short int format_type){	//processing the set up parametres in a NDI istance
 	
 	video_frame->xres = x_resolution;
 	video_frame->yres = y_resolution;
@@ -497,7 +497,7 @@ int main ( int argc,char **argv ) {		//main function
 	
 }
 	//release camera data buffer
-    Camera.release();
+    	Camera.release();
 	//destroy the ndi source
 	NDIlib_destroy();
 	
