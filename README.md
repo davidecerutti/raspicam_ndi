@@ -4,8 +4,9 @@ raspicamndi use a open source raspicam libraries, This library allows to use the
 #
 
 
-raspicamndi version history
-#
+# raspicamndi version history
+
+
 alpha testing
 	using raspicam librarie and first basic version of the raspistill over ndi
 
