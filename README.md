@@ -2,7 +2,7 @@
 
 raspicamndi use a open source raspicam libraries, This library allows to use the Raspberry Pi Camera under BSD License, project started by the AVA research group. http://www.uco.es/investiga/grupos/ava/node/40
 
-!!! IMPORTANT : in some version of Raspbian this library is just maked, if is not please get it from https://github.com/cedricve/raspicam
+!!! IMPORTANT : in some version of Raspbian this library is just maked, if is not present please get it from https://github.com/cedricve/raspicam
 #
 
 
