@@ -12,7 +12,7 @@ raspicamndi use a open source raspicam libraries, This library allows to use the
 raspicamndi - V1.0.0
 	is the first released version, now with a command line interface to set up the stream an camera
 	
-		-new feature:	new command line interface, all the basic usage of the raspicamndi is implemented as UI
+		*new feature:	new command line interface, all the basic usage of the raspicamndi is implemented as UI
 		-fixed bug:	cleaned al the code coming from alfa testing
 		+bug report:	no controls in incorrect value in setndi
 		+bug report:	no controls in incorrect values in set camera
