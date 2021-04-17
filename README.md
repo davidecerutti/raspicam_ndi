@@ -1,1 +1,0 @@
-# raspicam_ndi
