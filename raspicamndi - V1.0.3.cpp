@@ -432,8 +432,16 @@ int main ( int argc,char **argv ) {		//main function
 			//setup the camera (maby not needed, if not run in default)
 			std::cout<<"open camera setup or running with default?	Y/N		";
 			std::cin>>set_camera_choice;
-			if(set_camera_choice == 'Y' || set_camera_choice == 'y'){ClearScreen(); setCamera( &setting_camera );ClearScreen();}
-				else {ClearScreen(); setCameraDefault( &setting_camera);}
+			if(set_camera_choice == 'Y' || set_camera_choice == 'y'){
+										 ClearScreen(); 
+										 setCameraDefault( &setting_camera); 
+										 setCamera( &setting_camera ); 
+										 ClearScreen();
+										}
+			else {	
+				ClearScreen(); 
+				setCameraDefault( &setting_camera);
+			     }
 	
 	//create a new istance of the camera
     raspicam::RaspiCam Camera;
