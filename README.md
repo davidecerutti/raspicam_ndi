@@ -18,6 +18,9 @@ raspicamndi - V1.0.0
 		+bug report:	no controls in incorrect values in set camera
 		.bug report:	error in YUV420 sent by NDI (shifting down UV channels line = xres * sizeof(unit8))
 		
+		V1.0.2 -fixed video type single setting error message even with acceptable value
+		V1.0.3 -fixed setting camera lack for not setted value in the struct using default values
+		
 raspicamndi - V0.2.0 
 	is a pre release verion, including a benchmark test for devices
 
