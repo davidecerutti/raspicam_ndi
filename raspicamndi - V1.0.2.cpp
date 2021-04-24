@@ -246,9 +246,9 @@ void setCamera( struct setting *setting_camera ){		//set up parametres for the c
 			cout<<endl;
 			break;
 		case 7:
-			cout<<"activate camera stabilization? S/N 		";
+			cout<<"activate camera stabilization? Y/N 		";
 			cin>>stabint;
-			if (stabint =='S' || stabint =='s') {setting_camera->stabilization_val = true;}
+			if (stabint =='Y' || stabint =='y') {setting_camera->stabilization_val = true;}
 			if (stabint =='N' || stabint =='n') {setting_camera->stabilization_val = false;}
 			cout<<endl;
 			break;
