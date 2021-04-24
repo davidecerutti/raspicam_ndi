@@ -178,7 +178,7 @@ void setNDI(int *x_resolution, int *y_resolution, int *frame_rate, short int *fo
 					cin>>ft;
 					if(ft == 'i' || ft == 'I') {*format_type= i; fpchk=true; cout<<endl;}
 					if(ft == 'p' || ft == 'P') {*format_type= p; fpchk=true; cout<<endl;}
-					cout<<endl<<"retry using valid value"<<endl;
+					if(fpchk == false){cout<<endl<<"retry using valid value"<<endl;}
 				}
 	}
 	
