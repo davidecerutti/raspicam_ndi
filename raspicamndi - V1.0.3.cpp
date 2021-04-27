@@ -476,8 +476,8 @@ int main ( int argc,char **argv ) {		//main function
 	//initialize the streaming istance with the assigned setting	
 	processNDI(&video_frame, x_resolution, y_resolution, frame_rate, format_type);
 	
-	if(format_type == 0){std<<"running in "<<x_resolution<<"x"<<y_resolution<<" at "frame_rate<<" interleaved frames per seconds"<<std::endl;}
-	else {std<<"running in "<<x_resolution<<"x"<<y_resolution<<" at "frame_rate<<" progressive frames per seconds"<<std::endl;}
+	if(format_type == 0){std::cout<<"running in "<<x_resolution<<"x"<<y_resolution<<" at "<<frame_rate<<" interleaved frames per seconds"<<std::endl;}
+	else {std::cout<<"running in "<<x_resolution<<"x"<<y_resolution<<" at "<<frame_rate<<" progressive frames per seconds"<<std::endl;}
 	
 	//using <milliseconds> for the high res clock by chrono	
 	Frame_rate_send = (1/frame_rate)*1000;
