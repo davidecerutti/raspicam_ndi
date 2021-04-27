@@ -8,6 +8,13 @@ raspicamndi use a open source raspicam libraries, This library allows to use the
 
 # raspicamndi version history
 
+raspicamndi - V1.1.0
+	is a security and integrity update, now with controls in valid input values
+	
+		-fixed bug:	added controls in incorrect value in setndi
+		-fixed bug:	added controls in incorrect value in setcamera
+		.bug report:	error in YUV420 sent by NDI (shifting down UV channels line = xres * sizeof(unit8))
+
 
 raspicamndi - V1.0.0
 	is the first released version, now with a command line interface to set up the stream an camera
@@ -18,8 +25,8 @@ raspicamndi - V1.0.0
 		+bug report:	no controls in incorrect values in set camera
 		.bug report:	error in YUV420 sent by NDI (shifting down UV channels line = xres * sizeof(unit8))
 		
-		V1.0.2 -fixed video type single setting error message even with acceptable value
-		V1.0.3 -fixed setting camera lack for not setted value in the struct using default values
+		V1.0.2 -fixed bug: video type single setting error message even with acceptable value
+		V1.0.3 -fixed bug: setting camera lack for not setted value in the struct using default values
 		
 raspicamndi - V0.2.0 
 	is a pre release verion, including a benchmark test for devices
