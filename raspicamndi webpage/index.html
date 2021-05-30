@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RaspicamNDI controll wepage</title>
+  <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="NDIformat">
+
+
+          <select class="select_NDIformat" name="resolution" id="resolution">
+              <option value="640 x 480">640 x 480</option>
+              <option value="1280 x 720">1280 x 720</option>
+              <option value="1920 x 1080">1920 x 1080</option>
+          </select>
+
+          <select class="select_NDIformat" name="framerate" id="framerate">
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="50">50</option>
+              <option value="60">60</option>
+          </select>
+
+          <select class="select_NDIformat" name="formatype" id="formatype">
+              <option value="p">p</option>
+              <option value="i">i</option>
+          </select>
+
+          <p id="format"> </p>
+   </div>
+
+<div>
+    <button id="show_control" onclick="show_control_function()"> Show camera control </button>
+</div>
+
+
+    <div id="camerasettings">
+
+        <p id="brightness" >
+        <input type="range" min="0" max="100" value="50" class="slider" id="sli_brightness">
+        <a class="camerasettings_val"> Brightness: <span id="val_brightness"> </a> </p>
+
+        <p id="sharpness">
+        <input type="range" min="-100" max="100" value="0" class="slider" id="sli_sharpness">
+        <a class="camerasettings_val"> Sharpness: <span id="val_sharpness"> </a> </p>
+
+        <p id="contrast">
+        <input type="range" min="-100" max="100" value="0" class="slider" id="sli_contrast">
+        <a class="camerasettings_val"> Contrast: <span id="val_contrast"> </a> </p>
+
+        <p id="Saturation">
+        <input type="range" min="-100" max="100" value="0" class="slider" id="sli_Saturation">
+        <a class="camerasettings_val"> Saturation: <span id="val_Saturation"> </a> </p>
+
+        <p id="ShutterSpeed">
+        <input type="range" min="0" max="330000" value="0" step="1000" class="slider" id="sli_ShutterSpeed">
+        <a class="camerasettings_val"> Shutter Speed: <span id="val_ShutterSpeed"> </a> </p>
+
+        <p id="ISO">
+        <input type="range" min="100" max="800" value="400" step="10" class="slider" id="sli_ISO">
+        <a class="camerasettings_val"> ISO: <span id="val_ISO"> </a> </p>
+
+        <p id="ExposureCompensation">
+        <input type="range" min="-10" max="10" value="0" class="slider" id="sli_ExposureCompensation">
+        <a class="camerasettings_val"> Exposure Compensation: <span id="val_ExposureCompensation"> </a> </p>
+
+        <div class="slider" id=box></div>
+
+
+        <p id="AWB_R">
+        <input type="range" min="0" max="8" value="1" class="slider" id="sli_AWB_R">
+        <a class="camerasettings_val"> White Balance Red: <span id="val_AWB_R"> </a> </p>
+
+        <p id="AWB_G">
+        <input type="range" min="0" max="8" value="1" class="slider" id="sli_AWB_G">
+        <a class="camerasettings_val"> White Balance Green: <span id="val_AWB_G"> </a> </p>
+
+        <p id="AWB_B">
+        <input type="range" min="0" max="8" value="1" class="slider" id="sli_AWB_B">
+        <a class="camerasettings_val"> White Balance Blue: <span id="val_AWB_B"> </a> </p>
+
+    </div>
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
