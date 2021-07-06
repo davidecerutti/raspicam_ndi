@@ -1,1 +1,0 @@
-{"ndi":{"tcp":{"send":{},"recv":{"enable":true}},"groups":{"send":"Public,","recv":"Public,"},"unicast":{"send":{},"recv":{"enable":true}},"rudp":{"send":{"enable":true},"recv":{"enable":true}},"networks":{"ips":"","discovery":"172.168.25.33"},"multicast":{"send":{"ttl":"1","enable":"true","netmask":"255.255.0.0","netprefix":"239.255.0.1"},"recv":{"enable":false}}}}
