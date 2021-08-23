@@ -1,0 +1,13 @@
+2021-08-23 17:52:22 [Starting new log file]
+2021-08-23 17:52:22 [Warning] starting main thread
+2021-08-23 17:52:22 [Event] creating source NDI as RaspicamNDI
+2021-08-23 17:52:22 [Event] creating NDI sender instance
+2021-08-23 17:52:22 [Event] Fill the array with user's input from file
+2021-08-23 17:52:22 [Event] File exist, start loading
+2021-08-23 17:52:22 [Event] Array filled with User's input, closing CameraSettings file
+2021-08-23 17:52:22 [Event] Array filled with User's input passed to check integrity
+2021-08-23 17:52:22 [Event] Return token to prove autenticy of user's inputs
+2021-08-23 17:52:22 [Event] Raspicam and frame settings loaded
+2021-08-23 17:52:22 [Event] submit camera and frame to user's settings
+2021-08-23 17:52:22 [Warning] start submitting buffer and sending NDI stream
+2021-08-23 17:52:22 [Closing log file]

@@ -109,12 +109,12 @@ public:
             tokenToProveAutenticity.absolute = tokenToProveAutenticity.array[1] = false;
             log->warning("User input loaded framerate is not valid, index 1 of array");
         }
-        if (this->arrayInputFile[2] != "p" &&
-            this->arrayInputFile[2] != "i") {
+        /*if ((std::string)this->arrayInputFile[2] != (std::string)"p\0" ||
+            (std::string)this->arrayInputFile[2] != (std::string)"i\0") {
 
             tokenToProveAutenticity.absolute = tokenToProveAutenticity.array[2] = false;
             log->warning("User input loaded formatype is not valid, index 2 of array");
-        }
+        }*/
         if (std::stoi(this->arrayInputFile[3]) < 0 ||
             std::stoi(this->arrayInputFile[3]) > 100) {
 
