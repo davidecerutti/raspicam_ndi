@@ -11,7 +11,7 @@
 
 int main() {
 
-	logClass log(logLevelConsideration::Low, logLevelConsideration::Low);
+	logClass log(logLevelConsideration::Medium, logLevelConsideration::Low);
 	log.warning("starting main thread");
 
 	raspicam::RaspiCam Camera;
@@ -26,14 +26,14 @@ int main() {
 	catch (const char* exception) {
 		log.error((std::string)exception);
 	}
-
+	
 	NDIlib_send_create_t sourceSend;
 	log.event("creating source NDI as RaspicamNDI");
 
 	sourceSend.p_ndi_name = "RaspicamNDI";
 	sourceSend.p_groups = NULL;
 	sourceSend.clock_video = true;
-
+	
 	NDIlib_send_instance_t PiSender;
 
 	try {
